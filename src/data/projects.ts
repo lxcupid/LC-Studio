@@ -45,7 +45,7 @@ export const projects: Project[] = [
     category: "Software Solutions",
     description:
       "A unified social media management application that centralises scheduling, analytics, and engagement across multiple platforms into a single streamlined workflow.",
-    tags: ["React", "TypeScript", "Node.js"],
+    tags: ["React", "TypeScript", "Node.js", "Tauri", "Electron"],
     imageUrl: "/images/projects/ds1.png",
     images: [
       "/images/projects/ds1.png",
