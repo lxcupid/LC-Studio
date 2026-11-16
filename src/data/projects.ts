@@ -44,7 +44,7 @@ export const projects: Project[] = [
     title: "Database Studio",
     category: "Software Solutions",
     description:
-      "A unified social media management application that centralises scheduling, analytics, and engagement across multiple platforms into a single streamlined workflow.",
+      "A visual database management interface designed for developers and teams — making schema design, query building, and data exploration intuitive without sacrificing power.",
     tags: ["React", "TypeScript", "Node.js", "Tauri", "Electron"],
     imageUrl: "/images/projects/ds1.png",
     images: [
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "Collector Guard",
     category: "Software Solutions",
     description:
-      "A visual database management interface designed for developers and teams — making schema design, query building, and data exploration intuitive without sacrificing power.",
+      "A centralized notification system within CollectorGuard that automates alerts, streamlines communication, and ensures timely delivery of important collection updates and notifications.",
     tags: ["React", "TypeScript", "SQL"],
     imageUrl: "/images/projects/cg1.png",
     images: [
@@ -81,17 +81,22 @@ export const projects: Project[] = [
     year: "2026",
   },
   {
-    id: "fitbook",
-    title: "FitBook",
-    category: "Application Development",
+    id: "neuro",
+    title: "Neuro",
+    category: "Software Solutions",
     description:
-      "A fitness tracking and workout planning application focused on simplicity and consistency — helping users build and maintain training habits through smart scheduling and progress visibility.",
+      "A centralized notification engine that intelligently routes, manages, and orchestrates notifications across multiple channels and services for reliable, seamless communication.",
     tags: ["React Native", "TypeScript", "UI/UX"],
-    imageUrl: "",
+    imageUrl: "/images/projects/nr1.png",
+    images: [
+      "/images/projects/nr1.png",
+      "/images/projects/nr2.png",
+      "/images/projects/nr3.png",
+    ],
     liveUrl: "",
     githubUrl: "",
-    status: "Concept",
+    status: "In Progress",
     featured: true,
-    year: "2025",
+    year: "2026",
   },
 ];
