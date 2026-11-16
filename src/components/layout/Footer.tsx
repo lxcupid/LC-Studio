@@ -12,16 +12,25 @@ export default function Footer() {
         {/* Brand */}
         <Link
           href="/"
-          className="flex items-center hover:opacity-75 transition-opacity duration-200"
+          className="flex items-center gap-2.5 hover:opacity-75 transition-opacity duration-200"
           aria-label="LC DIGITAL — go to homepage"
         >
           <Image
-            src="/logo/lc_logo.png"
-            alt="LC DIGITAL"
+            src="/logo/lc_logo_trans.png"
+            alt=""
             width={36}
             height={36}
             className="h-9 w-auto brightness-0 invert"
+            aria-hidden="true"
           />
+          <div className="flex flex-col leading-none">
+            <span className="font-bold text-sm tracking-tight text-white">
+              LC <span className="text-[#C4B5FD]">Digital</span>
+            </span>
+            <span className="text-[9px] tracking-[0.15em] uppercase text-white/35 font-medium">
+              Studio
+            </span>
+          </div>
         </Link>
 
         {/* Nav */}

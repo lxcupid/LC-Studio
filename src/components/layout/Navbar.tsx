@@ -43,18 +43,27 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center hover:opacity-80 transition-opacity duration-200"
+          className="flex items-center gap-2.5 hover:opacity-80 transition-opacity duration-200"
           aria-label="LC DIGITAL — go to homepage"
           onClick={closeMenu}
         >
           <Image
-            src="/logo/lc_logo.png"
-            alt="LC DIGITAL"
-            width={40}
-            height={40}
+            src="/logo/lc_logo_trans.png"
+            alt=""
+            width={50}
+            height={50}
             priority
             className="h-10 w-auto"
+            aria-hidden="true"
           />
+          <div className="flex flex-col leading-none">
+            <span className="font-bold text-base tracking-tight text-[#171323]">
+              LC <span className="text-[#6D28D9]">Digital</span>
+            </span>
+            <span className="text-[10px] tracking-[0.15em] uppercase text-[#171323]/45 font-medium">
+              Studio
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav links */}
