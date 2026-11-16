@@ -1,20 +1,23 @@
-import { CheckCircle } from "lucide-react";
+import { Heart, Sparkles, HandHeart } from "lucide-react";
 
-const principles = [
+const values = [
   {
-    title: "Design-led thinking",
+    icon: Heart,
+    title: "Love",
     description:
-      "Every decision starts with the user. We build clarity into every interface before writing a single line of code.",
+      "We approach every project with compassion, integrity, and genuine care — for our clients, their users, and the work itself.",
   },
   {
-    title: "Engineering precision",
+    icon: Sparkles,
+    title: "Create",
     description:
-      "We write production-grade code — performant, maintainable, and built to scale with your product.",
+      "We turn ideas into thoughtful, innovative digital solutions. Every line of code and every design decision is intentional.",
   },
   {
-    title: "Focused collaboration",
+    icon: HandHeart,
+    title: "Serve",
     description:
-      "We work in close partnership with our clients, moving fast without sacrificing craft.",
+      "We use technology and creativity to create meaningful value for others — building products that make a real difference.",
   },
 ];
 
@@ -55,26 +58,34 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right — principles */}
-          <div className="flex flex-col gap-6 lg:pt-20">
-            {principles.map((item) => (
-              <div
-                key={item.title}
-                className="flex gap-4 p-6 rounded-2xl border border-[#E9E5EF] bg-[#F8F7FA] hover:border-[#C4B5FD] transition-colors duration-200"
-              >
-                <div className="shrink-0 mt-0.5">
-                  <CheckCircle size={20} className="text-[#6D28D9]" />
+          {/* Right — brand values */}
+          <div className="flex flex-col gap-5 lg:pt-20">
+            {/* Philosophy label */}
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#6D28D9]/70 mb-1">
+              Love. Create. Serve.
+            </p>
+
+            {values.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.title}
+                  className="flex gap-4 p-6 rounded-2xl border border-[#E9E5EF] bg-[#F8F7FA] hover:border-[#C4B5FD] transition-colors duration-200"
+                >
+                  <div className="shrink-0 mt-0.5">
+                    <Icon size={20} className="text-[#6D28D9]" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[#171323] mb-1.5">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-[#171323]/60 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-[#171323] mb-1.5">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-[#171323]/60 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

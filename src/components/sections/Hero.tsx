@@ -19,6 +19,20 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto w-full">
 
+        {/* Brand philosophy — subtle signature above the label */}
+        <div className="flex items-center gap-2 mb-5">
+          {["Love", "Create", "Serve"].map((word, i) => (
+            <span key={word} className="flex items-center gap-2">
+              <span className="text-[11px] font-semibold tracking-[0.18em] uppercase text-[#171323]/35">
+                {word}
+              </span>
+              {i < 2 && (
+                <span className="text-[#6D28D9]/40 text-[10px]" aria-hidden="true">·</span>
+              )}
+            </span>
+          ))}
+        </div>
+
         {/* Label — decorative, hidden from screen readers */}
         <div className="flex items-center gap-3 mb-8" aria-hidden="true">
           <span className="h-px w-8 bg-[#6D28D9]" />
@@ -36,10 +50,15 @@ export default function Hero() {
         </h1>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl text-[#171323]/60 max-w-xl leading-relaxed mb-12">
+        <p className="text-lg sm:text-xl text-[#171323]/60 max-w-xl leading-relaxed mb-3">
           LC DIGITAL is a focused digital product studio. We design and
           engineer web platforms, applications, and digital products that
           perform — from concept to launch.
+        </p>
+
+        {/* Supporting brand line */}
+        <p className="text-sm text-[#171323]/38 max-w-xl leading-relaxed mb-12 italic">
+          Building with purpose. Creating with meaning.
         </p>
 
         {/* CTAs — hash links to page sections, not page navigations */}
