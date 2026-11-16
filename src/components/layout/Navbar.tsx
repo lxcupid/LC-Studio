@@ -56,14 +56,6 @@ export default function Navbar() {
             className="h-10 w-auto"
             aria-hidden="true"
           />
-          <div className="flex flex-col leading-none">
-            <span className="font-bold text-base tracking-tight text-[#171323]">
-              LC <span className="text-[#6D28D9]">Digital</span>
-            </span>
-            <span className="text-[10px] tracking-[0.15em] uppercase text-[#171323]/45 font-medium">
-              Studio
-            </span>
-          </div>
         </Link>
 
         {/* Desktop nav links */}
