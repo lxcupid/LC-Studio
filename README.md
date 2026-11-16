@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LC DIGITAL — Digital Product Studio
+
+> We build ideas into digital experiences.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript 5
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Fonts:** Geist Sans / Geist Mono (via `next/font/google`)
+- **Deployment:** Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.17 or later
+- npm 9 or later
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Start the production server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Lint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  app/
+    layout.tsx        # Root layout — fonts, metadata, global styles
+    page.tsx          # Homepage
+    globals.css       # Tailwind + brand design tokens
+  components/
+    layout/           # Header, Footer, Nav
+    sections/         # Page sections (Hero, Work, Services, etc.)
+    ui/               # Reusable UI primitives (Button, Card, etc.)
+  data/
+    site.ts           # Site-wide config — name, nav, socials
+    projects.ts       # Project entries
+  lib/                # Utility functions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+public/
+  images/
+    projects/         # Project thumbnails
+  logo/               # Brand logo files
+  icons/              # Favicon and app icons
+```
+
+## Brand Colors
+
+| Token       | Hex       |
+|-------------|-----------|
+| Primary     | `#6D28D9` |
+| Secondary   | `#7C3AED` |
+| Dark        | `#171323` |
+| Background  | `#F8F7FA` |
+| Lavender    | `#C4B5FD` |
+| Border      | `#E9E5EF` |
+
+## Environment Variables
+
+No environment variables are required for the foundation phase.  
+Add a `.env.local` file at the project root when needed.
+
+## Deployment
+
+Deploy to [Vercel](https://vercel.com/) by connecting the repository.  
+The project is pre-configured for zero-config Vercel deployment.
+# LC-Studio
