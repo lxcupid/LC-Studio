@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "LC DIGITAL is a digital product studio crafting modern web and mobile experiences — from concept to launch.",
   url: "https://lcdigital.studio",
-  email: "hello@lcdigital.studio",
+  email: "lcdev.digital@gmail.com",
   socials: {
     twitter: "",
     linkedin: "",
