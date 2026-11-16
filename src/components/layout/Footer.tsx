@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
@@ -11,10 +12,16 @@ export default function Footer() {
         {/* Brand */}
         <Link
           href="/"
-          className="font-bold text-base tracking-tight text-white hover:text-[#C4B5FD] transition-colors duration-200"
+          className="flex items-center hover:opacity-75 transition-opacity duration-200"
           aria-label="LC DIGITAL — go to homepage"
         >
-          <span className="text-[#6D28D9]" aria-hidden="true">LC</span>DIGITAL
+          <Image
+            src="/logo/lc_logo.png"
+            alt="LC DIGITAL"
+            width={36}
+            height={36}
+            className="h-9 w-auto brightness-0 invert"
+          />
         </Link>
 
         {/* Nav */}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { siteConfig } from "@/data/site";
 
@@ -42,12 +43,18 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-1 font-bold text-lg tracking-tight text-[#171323] hover:text-[#6D28D9] transition-colors duration-200"
+          className="flex items-center hover:opacity-80 transition-opacity duration-200"
           aria-label="LC DIGITAL — go to homepage"
           onClick={closeMenu}
         >
-          <span className="text-[#6D28D9]" aria-hidden="true">LC</span>
-          <span>DIGITAL</span>
+          <Image
+            src="/logo/lc_logo.png"
+            alt="LC DIGITAL"
+            width={40}
+            height={40}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop nav links */}
