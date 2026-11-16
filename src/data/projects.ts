@@ -42,7 +42,7 @@ export const projects: Project[] = [
   {
     id: "databasestudio",
     title: "Database Studio",
-    category: "Web Development",
+    category: "Software Solutions",
     description:
       "A unified social media management application that centralises scheduling, analytics, and engagement across multiple platforms into a single streamlined workflow.",
     tags: ["React", "TypeScript", "Node.js"],
